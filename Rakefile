@@ -11,3 +11,8 @@ namespace :greeting do
       puts "hola de Rake!"
   end
 end
+
+namespace :db do
+  desc 'migrates changes to your database'
+  task :migrate => :environment do
+    Student
